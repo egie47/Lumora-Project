@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Alamat Saya</title>
+
+    <link rel="stylesheet" href="./output.css" />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto p-6">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold">Alamat Saya</h1>
+
+        <a href="account.html" class="text-gray-500"> ← Kembali </a>
+      </div>
+
+      <div class="bg-white rounded-3xl border border-gray-200 p-6 mb-6">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input
+            id="label"
+            placeholder="Label (Rumah, Kantor)"
+            class="border border-gray-200 rounded-xl px-4 py-3"
+          />
+
+          <input
+            id="city"
+            placeholder="Kota"
+            class="border border-gray-200 rounded-xl px-4 py-3"
+          />
+        </div>
+
+        <textarea
+          id="address"
+          rows="4"
+          placeholder="Alamat Lengkap"
+          class="w-full border border-gray-200 rounded-xl px-4 py-3 mt-4"
+        ></textarea>
+
+        <button
+          onclick="addAddress()"
+          class="w-full bg-black text-white py-4 rounded-2xl mt-4"
+        >
+          Tambah Alamat
+        </button>
+      </div>
+
+      <div id="addressList" class="space-y-4"></div>
+    </div>
+
+    <script src="address.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>

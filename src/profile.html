@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Edit Profil</title>
+
+    <!-- ICONIFY -->
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+    <!-- TAILWIND -->
+
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- FONT -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <div class="max-w-3xl mx-auto p-6">
+      <!-- HEADER -->
+
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold">Edit Profil</h1>
+
+        <a
+          href="account.html"
+          class="text-gray-500 hover:text-black transition-all duration-300"
+        >
+          ← Kembali
+        </a>
+      </div>
+
+      <!-- CARD -->
+
+      <div class="bg-white rounded-3xl border border-gray-200 p-6 shadow-sm">
+        <!-- FOTO -->
+
+        <div class="flex flex-col items-center mb-8">
+          <img
+            id="profilePreview"
+            src="https://ui-avatars.com/api/?name=User"
+            class="w-28 h-28 rounded-full object-cover border border-gray-200 mb-3"
+          />
+
+          <input type="file" id="photoInput" accept="image/*" class="hidden" />
+
+          <button
+            type="button"
+            onclick="document.getElementById('photoInput').click()"
+            class="px-4 py-2 border border-gray-200 rounded-xl hover:bg-gray-50 transition-all duration-300"
+          >
+            Ganti Foto
+          </button>
+        </div>
+
+        <!-- FORM -->
+
+        <div class="space-y-4">
+          <!-- NICKNAME -->
+
+          <div>
+            <label class="block text-sm mb-2 font-medium"> Nickname </label>
+
+            <input
+              id="nickname"
+              type="text"
+              placeholder="Masukkan nickname"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300"
+            />
+          </div>
+
+          <!-- FULLNAME -->
+
+          <div>
+            <label class="block text-sm mb-2 font-medium"> Nama Lengkap </label>
+
+            <input
+              id="fullname"
+              type="text"
+              placeholder="Masukkan nama lengkap"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300"
+            />
+          </div>
+
+          <!-- EMAIL -->
+
+          <div>
+            <label class="block text-sm mb-2 font-medium"> Email </label>
+
+            <input
+              id="email"
+              type="email"
+              readonly
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 bg-gray-100 cursor-not-allowed"
+            />
+          </div>
+
+          <!-- PHONE -->
+
+          <div>
+            <label class="block text-sm mb-2 font-medium"> Nomor HP </label>
+
+            <input
+              id="phone"
+              type="text"
+              placeholder="Masukkan nomor HP"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300"
+            />
+          </div>
+
+          <!-- ADDRESS -->
+
+          <div>
+            <label class="block text-sm mb-2 font-medium"> Alamat </label>
+
+            <textarea
+              id="address"
+              rows="3"
+              placeholder="Masukkan alamat lengkap"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300 resize-none"
+            ></textarea>
+          </div>
+
+          <!-- GRID -->
+
+          <div class="grid md:grid-cols-3 gap-4">
+            <!-- CITY -->
+
+            <div>
+              <label class="block text-sm mb-2 font-medium"> Kota </label>
+
+              <input
+                id="city"
+                type="text"
+                placeholder="Kota"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300"
+              />
+            </div>
+
+            <!-- PROVINCE -->
+
+            <div>
+              <label class="block text-sm mb-2 font-medium"> Provinsi </label>
+
+              <input
+                id="province"
+                type="text"
+                placeholder="Provinsi"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300"
+              />
+            </div>
+
+            <!-- POSTAL CODE -->
+
+            <div>
+              <label class="block text-sm mb-2 font-medium"> Kode Pos </label>
+
+              <input
+                id="postalCode"
+                type="text"
+                placeholder="Kode Pos"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-black transition-all duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+
+          <button
+            type="button"
+            onclick="saveProfile()"
+            class="w-full bg-black text-white py-4 rounded-2xl mt-4 hover:opacity-90 active:scale-[0.98] transition-all duration-300"
+          >
+            Simpan Perubahan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP -->
+
+    <div
+      id="popupOverlay"
+      class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4"
+    >
+      <div class="bg-white rounded-3xl p-8 max-w-sm w-full text-center">
+        <!-- ICON -->
+
+        <div class="mb-4 flex justify-center">
+          <div
+            class="w-24 h-24 rounded-3xl bg-green-100 flex items-center justify-center"
+          >
+            <iconify-icon
+              id="popupIcon"
+              icon="ph:check-fill"
+              class="text-[52px] text-green-500"
+            ></iconify-icon>
+          </div>
+        </div>
+
+        <!-- TITLE -->
+
+        <h2 id="popupTitle" class="text-2xl font-bold mb-2">Berhasil</h2>
+
+        <!-- MESSAGE -->
+
+        <p id="popupMessage" class="text-gray-500 mb-6">Pesan</p>
+
+        <!-- BUTTON -->
+
+        <button
+          type="button"
+          id="popupButton"
+          class="w-full bg-black text-white py-3 rounded-2xl hover:opacity-90 transition-all duration-300"
+        >
+          Oke
+        </button>
+      </div>
+    </div>
+
+    <!-- JS -->
+
+    <script src="profile.js"></script>
+  </body>
+</html>

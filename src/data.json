@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Blue Lock 17",
+    "price": 60000,
+    "image": "https://www.phoenixanimestore.com/media/nextgenimages/media/catalog/product/cache/616a7398005cfee60500354f848a3838/5/1/512601025.webp",
+    "author": "Muneyuki Kaneshiro",
+    "genre": "Sports,",
+    "rating": 4.8,
+    "description": "Setiap orang menampilkan performa yang mendobrak batasan di laga Timnas U-20 melawan Blue Lock Eleven! Konflik Itoshi Bersaudara berkembang makin dalam"
+  },
+  {
+    "id": 2,
+    "title": "One Piece Vol. 1",
+    "price": 85000,
+    "image": "https://cdn.myanimelist.net/images/manga/2/253146.jpg",
+    "author": "Eiichiro Oda",
+    "genre": "Adventure, Fantasy",
+    "rating": 4.9,
+    "description": "Monkey D. Luffy adalah seorang pemuda yang bermimpi menjadi Raja Bajak Laut. Setelah memakan buah iblis, ia mendapatkan kekuatan tubuh elastis, namun kehilangan kemampuan berenang. Dalam volume pertama ini, Luffy memulai petualangannya di lautan luas untuk mencari harta karun legendaris bernama One Piece. Sepanjang perjalanan, ia bertemu dengan berbagai karakter unik dan mulai membangun kru bajak lautnya sendiri."
+  },
+  {
+    "id": 3,
+    "title": "Attack on Titan Vol. 1",
+    "price": 90000,
+    "image": "https://cdn.myanimelist.net/images/manga/2/37846.jpg",
+    "author": "Hajime Isayama",
+    "genre": "Action, Drama",
+    "rating": 4.7,
+    "description": "Dunia manusia berada di ambang kehancuran akibat kemunculan makhluk raksasa bernama Titan. Untuk bertahan hidup, manusia membangun tembok raksasa sebagai perlindungan. Namun suatu hari, tembok tersebut berhasil ditembus, membawa kehancuran besar. Eren Yeager, seorang pemuda yang menyaksikan tragedi tersebut, bersumpah untuk membasmi semua Titan. Volume pertama ini memperkenalkan dunia yang gelap, penuh ketegangan, dan konflik emosional."
+  },
+  {
+    "id": 4,
+    "title": "Demon Slayer Vol. 1",
+    "price": 80000,
+    "image": "https://cdn.myanimelist.net/images/manga/3/179023.jpg",
+    "author": "Koyoharu Gotouge",
+    "genre": "Action, Supernatural",
+    "rating": 4.8,
+    "description": "Tanjiro Kamado adalah seorang anak laki-laki yang hidup sederhana bersama keluarganya. Namun hidupnya berubah drastis ketika keluarganya dibantai oleh iblis, dan adiknya Nezuko berubah menjadi iblis. Dalam volume pertama ini, Tanjiro memulai perjalanan sebagai pemburu iblis untuk menyelamatkan adiknya dan membalas dendam. Cerita ini dipenuhi dengan emosi, aksi yang intens, dan hubungan keluarga yang kuat."
+  }
+]

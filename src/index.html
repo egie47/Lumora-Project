@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokoko — Modern Store</title>
+
+    <link rel="stylesheet" href="./output.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-900">
+    <!-- NAVBAR -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur border-b border-gray-100 z-50 transition"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <h1 class="text-xl font-bold">Lumora</h1>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#" class="hover:text-black text-gray-500">Home</a>
+          <a href="#kategori" class="hover:text-black text-gray-500"
+            >Kategori</a
+          >
+        </nav>
+
+        <a
+          href="./login.html"
+          class="bg-black text-white px-5 py-2 rounded-xl text-sm hover:opacity-90 transition"
+        >
+          Login
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-24 bg-gray-50">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- TEXT -->
+        <div>
+          <span class="text-sm bg-black text-white px-4 py-1 rounded-full">
+            Minimalist E-Commerce
+          </span>
+
+          <h2 class="text-5xl font-bold leading-tight mt-6 mb-5">
+            Belanja Mudah, Cepat & Modern
+          </h2>
+
+          <p class="text-gray-500 leading-relaxed mb-8">
+            Temukan berbagai produk terbaik mulai dari fashion, electronics,
+            jewelery hingga kebutuhan harian.
+          </p>
+
+          <div class="flex gap-4">
+            <a
+              href="./login.html"
+              class="bg-black text-white px-6 py-4 rounded-xl text-sm hover:opacity-90 transition"
+            >
+              Mulai Belanja
+            </a>
+
+            <a
+              href="#kategori"
+              class="border border-gray-300 px-6 py-4 rounded-xl text-sm hover:bg-gray-100 transition"
+            >
+              Explore
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+            class="w-full h-[500px] object-cover rounded-3xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section id="kategori" class="py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-center mb-10">
+          <h2 class="text-3xl font-bold">Kategori</h2>
+
+          <a href="./login.html" class="text-sm text-gray-500 hover:text-black">
+            Lihat semua →
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div class="bg-gray-100 p-6 rounded-2xl">
+            <h3 class="font-semibold">Electronics</h3>
+          </div>
+
+          <div class="bg-gray-100 p-6 rounded-2xl">
+            <h3 class="font-semibold">Jewelery</h3>
+          </div>
+
+          <div class="bg-gray-100 p-6 rounded-2xl">
+            <h3 class="font-semibold">Men's Fashion</h3>
+          </div>
+
+          <div class="bg-gray-100 p-6 rounded-2xl">
+            <h3 class="font-semibold">Women's Fashion</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-black text-white">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <h2 class="text-4xl font-bold mb-5">Mulai Belanja Sekarang</h2>
+
+        <p class="text-gray-400 mb-8">
+          Nikmati pengalaman belanja modern dengan tampilan clean dan cepat.
+        </p>
+
+        <a
+          href="./login.html"
+          class="inline-block bg-white text-black px-8 py-4 rounded-xl text-sm font-medium hover:opacity-90 transition"
+        >
+          Login Sekarang
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t py-8 text-center text-sm text-gray-400">
+      © 2026 Lumora Store
+    </footer>
+
+    <script src="./landing.js"></script>
+  </body>
+</html>
